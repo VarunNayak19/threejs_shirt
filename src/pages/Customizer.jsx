@@ -140,7 +140,7 @@ const Customizer = () => {
                                     <Tab
                                         key={tab.name}
                                         tab={tab}
-                                        handleClick={() => { activeEditorTab !== "" ? setActiveEditorTab("") : setActiveEditorTab(tab.name) }}
+                                        handleClick={() => setActiveEditorTab(tab.name)}
                                     />
                                 ))}
 
@@ -196,6 +196,7 @@ const Customizer = () => {
                             className='w-3/5 h-3/5 object-contain'
                         />
                     </button> */}
+                    <div className=' h-screen w-screen absolute z-5  bg-transparent top-0 left-0' onClick={() => { activeEditorTab !== "" ? setActiveEditorTab("") : null }}></div>
                 </>
             )}
         </AnimatePresence>
