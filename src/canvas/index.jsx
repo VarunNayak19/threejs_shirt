@@ -122,7 +122,7 @@ const CanvasModel = () => {
                         className="absolute top-5 m-auto items-center justify-center z-10  w-full flex h-auto"
                         {...slideAnimation('down')}>
                         <div className=' w-1/4 h-full glassmorphism flex justify-start gap-4 items-center p-3' style={{ minWidth: "24rem" }}>
-                            <span className="material-symbols-outlined rotation-css" onClick={() => { window.location.reload() }}>
+                            <span className="material-symbols-outlined rotation-css cursor-pointer" onClick={() => { window.location.reload() }}>
                                 autorenew
                             </span>
                             <span className=' text-center'>Please press the refresh button to see the changes...</span>
